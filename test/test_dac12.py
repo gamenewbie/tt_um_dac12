@@ -1,11 +1,9 @@
-# SPDX-FileCopyrightText: © 2024 Tiny Tapeout
-# SPDX-License-Identifier: Apache-2.0
-
 import cocotb
 from cocotb.clock import Clock
 from cocotb.triggers import RisingEdge, ClockCycles
 import random
 
+# --- Test Configuration ---
 CLOCK_PERIOD_NS = 10  # 100 MHz clock
 PWM_PERIOD_CYCLES = 4096 # For a 12-bit DAC, one full PWM cycle is 2^12 clock cycles
 
@@ -76,4 +74,3 @@ async def test_dac_functionality(dut):
     await run_dac_test(dut, 4095)
 
     dut._log.info("All DAC tests passed successfully!")
-

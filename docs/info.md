@@ -9,12 +9,13 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+A 12 bit dac
 
 ## How to test
 
-Explain how to use your project
+Plug in pins to esp32-wroom-s3 controller with GPIO 1-3 for clk, rst-n, and ena respectively. GPIO 11-4 for the rightmost ui-in bits and 12-15 fro the 4 leftmost bits of ui-in. Test by seeing the DAC can replicate values 1024, 2048, and 4095 on a wave analyzer or serial output of the esp32-wroom-s3.
 
 ## External hardware
 
 List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+esp32-wroom-s3
